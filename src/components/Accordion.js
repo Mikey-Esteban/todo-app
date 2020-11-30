@@ -7,12 +7,12 @@ const Accordion = () => {
   const ROW = document.createElement('DIV');
   ROW.classList.add('row');
   const COL = document.createElement('DIV');
-  COL.classList.add('col-md-6');
+  COL.classList.add('col-lg-6');
   CONTAINER.append(ROW);
   ROW.append(COL);
 
   const ACCORDION = document.createElement('DIV');
-  ACCORDION.classList.add('accordion');
+  ACCORDION.classList.add('accordion', 'accordion-flush');
   ACCORDION.id = 'accordionExample';
   const AccordionITEM = document.createElement('DIV');
   AccordionITEM.classList.add('accordion-item');

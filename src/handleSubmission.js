@@ -8,19 +8,20 @@ const handleSubmission = event => {
   const dueDate = form.elements['dueDate'];
   const priority = form.elements['priority'];
   const notes = form.elements['notes'];
-  const completed = form.elements['completed'];
+  const completed = false;
+  // const completed = form.elements['completed'];
   data['title'] = title.value;
   data['description'] = description.value;
   data['dueDate'] = dueDate.value;
   data['priority'] = priority.value;
   data['notes'] = notes.value;
-  data['completed'] = completed.checked;
+  data['completed'] = completed;
   title.value = '';
   description.value = '';
   dueDate.value = '';
   priority.value = '';
   notes.value = '';
-  completed.value = '';
+  // completed.value = '';
 
   const closeBtn = document.querySelector('.btn-close');
   closeBtn.click();
@@ -29,4 +30,4 @@ const handleSubmission = event => {
 
 }
 
-export default handleSubmission 
+export default handleSubmission

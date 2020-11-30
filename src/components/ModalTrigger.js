@@ -5,7 +5,7 @@ const ModalTrigger = () => {
   BUTTON.setAttribute('type', 'button');
   BUTTON.setAttribute('data-toggle', 'modal');
   BUTTON.setAttribute('data-target', '#formModal');
-  BUTTON.textContent = 'Launch demo modal';
+  BUTTON.textContent = 'Add Todo';
 
   return BUTTON
 }

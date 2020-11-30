@@ -22,14 +22,14 @@ const Form = () => {
     FORM.append(DIV);
   }
 
-  const SWITCH = FormSwitch();
+  // const SWITCH = FormSwitch();
 
   const SUBMIT = document.createElement('BUTTON');
   SUBMIT.classList.add('btn', 'btn-primary');
   SUBMIT.setAttribute('type', 'submit');
-  SUBMIT.textContent = 'Add Todo';
+  SUBMIT.textContent = 'Create';
 
-  FORM.append(SWITCH, SUBMIT);
+  FORM.append(SUBMIT);
 
   return FORM
 }
