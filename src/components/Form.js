@@ -2,7 +2,6 @@ import FormLabel from './formHelpers/FormLabel'
 import FormInput from './formHelpers/FormInput'
 import FormHelp from './formHelpers/FormHelp'
 import FormTextarea from './formHelpers/FormTextarea'
-import FormSwitch from './formHelpers/FormSwitch'
 import { data } from './formHelpers/formData'
 
 const Form = () => {
@@ -21,8 +20,6 @@ const Form = () => {
     DIV.append(helpDIV);
     FORM.append(DIV);
   }
-
-  // const SWITCH = FormSwitch();
 
   const SUBMIT = document.createElement('BUTTON');
   SUBMIT.classList.add('btn', 'btn-primary');

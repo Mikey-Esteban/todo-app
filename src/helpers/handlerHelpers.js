@@ -1,5 +1,4 @@
 const handleFormData = event => {
-
   const form = document.querySelector(`#${event.target.id}`);
   const data = {}
 
@@ -25,7 +24,25 @@ const handleFormData = event => {
   closeBtn.click();
 
   return data
-
 }
 
-export default handleFormData
+const handleCheckedTodo = event => {
+  const li = event.target.parentNode;
+  const title = li.querySelector('h6');
+
+  if (event.target.checked) {
+    title.classList.add('fw-lighter', 'text-muted', 'text-decoration-line-through');
+  } else {
+    if (title.classList.contains('fw-lighter')) {
+      title.classList.remove('fw-lighter', 'text-muted', 'text-decoration-line-through')  ;
+    }
+  }
+}
+
+const handleDeleteTodo = event => {
+  event.target.tagName == 'A' ?
+    event.target.parentNode.remove() :
+    event.target.parentNode.parentNode.remove() ;
+}
+
+export { handleFormData, handleCheckedTodo, handleDeleteTodo }
