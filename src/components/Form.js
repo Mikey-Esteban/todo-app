@@ -1,8 +1,5 @@
-import FormLabel from './formHelpers/FormLabel'
-import FormInput from './formHelpers/FormInput'
-import FormHelp from './formHelpers/FormHelp'
-import FormTextarea from './formHelpers/FormTextarea'
-import { data } from './formHelpers/formData'
+import { FormHelp, FormInput, FormLabel, FormTextarea } from './helpers/formHelpers'
+import { data } from './helpers/formData'
 
 const Form = () => {
 
