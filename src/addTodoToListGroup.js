@@ -42,7 +42,7 @@ const addTodoToListGroup = (todo) => {
   A.textContent = 'notes';
 
   const imgANCHOR = document.createElement('A');
-  imgANCHOR.classList.add('btn');
+  imgANCHOR.classList.add('btn', 'trash');
   const IMG = document.createElement('IMG');
   IMG.src = './assets/img/trash.svg';
   IMG.height = '16';
