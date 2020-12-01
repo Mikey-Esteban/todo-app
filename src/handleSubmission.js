@@ -9,7 +9,6 @@ const handleSubmission = event => {
   const priority = form.elements['priority'];
   const notes = form.elements['notes'];
   const completed = false;
-  // const completed = form.elements['completed'];
   data['title'] = title.value;
   data['description'] = description.value;
   data['dueDate'] = dueDate.value;
@@ -21,7 +20,6 @@ const handleSubmission = event => {
   dueDate.value = '';
   priority.value = '';
   notes.value = '';
-  // completed.value = '';
 
   const closeBtn = document.querySelector('.btn-close');
   closeBtn.click();

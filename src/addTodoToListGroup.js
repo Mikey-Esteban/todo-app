@@ -1,20 +1,17 @@
 const addTodoToListGroup = (todo) => {
 
-  console.log('in addTodoToListGroup');
   const accordionBody = document.querySelector('.accordion-body');
   const ul = accordionBody.querySelector('.list-group');
 
   const LI = document.createElement('LI');
   LI.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+  LI.id = todo['id'];
 
-  // const CHECKBOX = document.createElement('DIV');
-  // CHECKBOX.classList.add('form-check');
   const checkboxINPUT = document.createElement('INPUT');
   checkboxINPUT.classList.add('form-check-input', 'my-0');
   checkboxINPUT.setAttribute('type', 'checkbox');
   checkboxINPUT.setAttribute('value', '');
   checkboxINPUT.id = 'completed';
-  // CHECKBOX.append(checkboxINPUT);
 
   const TITLE = document.createElement('H6');
   let color;

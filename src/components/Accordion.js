@@ -1,5 +1,3 @@
-import ListGroup from './ListGroup'
-
 const Accordion = () => {
 
   const CONTAINER = document.createElement('DIV');
@@ -37,10 +35,10 @@ const Accordion = () => {
   AccordionTODOS.setAttribute('data-parent', '#accordionExample');
   const AccordionBODY = document.createElement('DIV');
   AccordionBODY.classList.add('accordion-body');
+  const UL = document.createElement('UL');
+  UL.classList.add('list-group');
 
-  AccordionBODY.append(ListGroup());
-
-
+  AccordionBODY.append(UL);
   AccordionTODOS.append(AccordionBODY);
 
   AccordionITEM.append(H2, AccordionTODOS);
