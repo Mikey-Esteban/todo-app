@@ -1,3 +1,5 @@
+import reformatDate from './reformatDate'
+
 const addTodoToListGroup = (todo) => {
 
   const accordionBody = document.querySelector('.accordion-body');
@@ -29,7 +31,7 @@ const addTodoToListGroup = (todo) => {
 
   const DUEDATE = document.createElement('P');
   DUEDATE.classList.add('fs-6', 'my-0', 'text-black-50', 'fw-light');
-  DUEDATE.textContent = todo['dueDate'];
+  DUEDATE.textContent = reformatDate(todo['dueDate']);
 
   const A = document.createElement('A');
   A.classList.add('btn', 'btn-sm', 'btn-outline-dark');
