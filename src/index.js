@@ -14,15 +14,11 @@ window.addEventListener('DOMContentLoaded', event => {
 
   const mainDiv = document.querySelector('#content');
 
-  const modalWRAPPER = document.createElement('DIV');
-  modalWRAPPER.classList.add('container', 'my-5');
-
   const modalTRIGGER = ModalTrigger();
-  modalWRAPPER.append(modalTRIGGER);
   const MODAL = Modal();
   const ACCORDION = Accordion();
 
-  mainDiv.append(modalWRAPPER, MODAL, ACCORDION);
+  mainDiv.append(modalTRIGGER, MODAL, ACCORDION);
 
   const form = mainDiv.querySelector('#todoForm');
   form.addEventListener('submit', event => {
