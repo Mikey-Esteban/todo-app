@@ -3,7 +3,7 @@ import Modal from './components/Modal'
 import Accordion from './components/Accordion'
 import todoFactory from './todoFactory'
 import addTodoToListGroup from './addTodoToListGroup'
-import handleSubmission from './handleSubmission'
+import handleFormData from './handleFormData'
 import handleCheckedTodo from './handleCheckedTodo'
 import handleDeleteTodo from './handleDeleteTodo'
 import { v4 as uuid } from 'uuid';
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
   const form = mainDiv.querySelector('#todoForm');
   form.addEventListener('submit', event => {
     event.preventDefault();
-    const data = handleSubmission(event);
+    const data = handleFormData(event);
     data.id = uuid();
     const todo = todoFactory(data);
     todosList.push(todo);

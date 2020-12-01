@@ -1,4 +1,4 @@
-const handleSubmission = event => {
+const handleFormData = event => {
 
   const form = document.querySelector(`#${event.target.id}`);
   const data = {}
@@ -28,4 +28,4 @@ const handleSubmission = event => {
 
 }
 
-export default handleSubmission
+export default handleFormData
